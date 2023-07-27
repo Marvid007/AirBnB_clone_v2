@@ -16,10 +16,10 @@ app = Flask(__name__)
 def cities_by_states():
     """Displays an HTML page with a list of all states and related cities.
 
-        States/cities are sorted by name.
-        """
-        states = storage.all("State")
-        return render_template("8-cities_by_states.html", states=states)
+    States/cities are sorted by name.
+    """
+    states = storage.all("State")
+    return render_template("8-cities_by_states.html", states=states)
 
 
 @app.teardown_appcontext
